@@ -12,7 +12,7 @@ async def on_ready():
     print('http://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
     print("Hi I'm Randy!")
    
-@client.command()i
+@client.command()
 async def greet(*args):
    
     await client.say("Beef and lamb?")
