@@ -8,10 +8,13 @@ client = Bot(description="Randy", command_prefix="Randy!", pm_help = True)
 
 @client.event
 async def on_ready():
+     
+    print('http://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
     print("Hi I'm Randy!")
    
-@client.command()
+@client.command()i
 async def greet(*args):
+   
     await client.say("Beef and lamb?")
     await asyncio.sleep(1)
 
