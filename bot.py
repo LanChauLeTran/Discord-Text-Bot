@@ -4,6 +4,8 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import platform
 import requests
+import urllib
+import json
 
 client = Bot(description="Randy", command_prefix="Randy!", pm_help = True)
 
@@ -20,10 +22,11 @@ async def greet(*args):
     await asyncio.sleep(1)
 
 @client.command()
-async def search(*args):
+async def top(*args):
 
-    print(args)
-        
+
+    
+
 f = open("token.txt", "r")
 client.run(f.read())
 f.close()
