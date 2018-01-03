@@ -18,5 +18,7 @@ async def greet(*args):
     await client.say("Beef and lamb?")
     await asyncio.sleep(1)
 
-client.run('Mzk2OTM0ODE3NjY2NTY0MDk3.DSop4A.ZuTQyqH6DVaR6MEzKC5YbPTBX1M')
 
+f = open("token.txt", "r")
+client.run(f.read())
+f.close()
