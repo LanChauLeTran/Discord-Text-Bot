@@ -4,7 +4,6 @@ from discord.ext.commands import Bot
 from discord.ext import commands
 import platform
 import requests
-from google import search
 
 client = Bot(description="Randy", command_prefix="Randy!", pm_help = True)
 
